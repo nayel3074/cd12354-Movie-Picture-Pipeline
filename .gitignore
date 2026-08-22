@@ -5,3 +5,8 @@ node_modules
 *.tfstate.backup
 credentials
 .pytest_cache
+# Local Terraform state and generated files
+*.tfstate
+bin/
+
+*.tf.backup
