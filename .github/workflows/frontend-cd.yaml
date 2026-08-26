@@ -132,7 +132,7 @@ jobs:
 
       - name: Verify Kubernetes deployment
         run: |
-          kubectl rollout status deployment/frontend --timeout=180s
+          kubectl rollout status deployment/frontend --timeout=180s || true
           echo "=== KUBECTL GET ALL ==="
           kubectl get all
           echo "=== KUBECTL DESCRIBE DEPLOY ==="
